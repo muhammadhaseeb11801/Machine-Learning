@@ -1,18 +1,23 @@
-import pandas as pd # pandas install 
+## Import Required Libraries
+import pandas as pd # Import the Pandas library for data manipulation.
 
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.model_selection import train_test_split
 
+### Explanation
+- **Pandas** is used to load and manage the dataset.
+- **LabelEncoder** converts text values into numbers.
+- **MinMaxScaler** scales numerical values into a specific range.
+- **train_test_split** divides the dataset into training and testing sets.
+
 # Load data
 # Load the Titanic dataset from a CSV file.
-
 df = pd.read_csv("data.csv")
 
 ### Explanation
 This line reads the **data.csv** file and stores it in a Pandas DataFrame called **df**.
 
 # Print only the Age column
-
 print(df["Age"])
 
 ### Explanation
